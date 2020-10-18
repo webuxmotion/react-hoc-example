@@ -1,0 +1,28 @@
+.app {
+  
+  &__columns {
+    display: flex;
+  }
+
+  &__column {
+    box-sizing: border-box;
+    padding-top: 30px;
+
+    &:first-child {
+      width: 62%;
+      padding-left: 40px;
+      padding-right: 100px;
+    }
+
+    &:last-child {
+      width: 38%;
+      padding-right: 50px;
+    }
+  }
+
+  &__column-header {
+    color: #3D405B;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+}

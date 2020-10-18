@@ -1,0 +1,23 @@
+.comments {
+
+  &__item {
+    background-color: #80b29a;
+    padding: 18px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+
+  &__item-name {
+    font-weight: bold;
+  }
+
+  &__item-email {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  &__date {
+    margin-top: 10px;
+    text-align: right;
+  }
+}

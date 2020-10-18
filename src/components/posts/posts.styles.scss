@@ -1,0 +1,26 @@
+.posts {
+
+  &__item {
+    background-color: #f3f1de;
+    padding: 18px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+
+  &__item-title {
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  &__date {
+    margin-top: 10px;
+    text-align: right;
+  }
+}
