@@ -33,7 +33,7 @@ class Comments extends React.Component {
               <p className="comments__date">{parseDate(comment.created_at)}</p>
             </div>
           ))
-          : 
+          :
           <p>Loading...</p>
         }
       </div>
