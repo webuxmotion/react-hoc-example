@@ -36,6 +36,8 @@ const withData = (WrappedComponent, dataSource) => {
 
   return WithData;
 }
+
+export default withData;
 ```
 
 ## 2. Use withData HOC in Posts component
