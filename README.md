@@ -47,7 +47,7 @@ Work with file src/components/posts/**posts.component.js**:
 import withData from '../../with-data';
 ```
 
-2.3 Replace class based component with funcitonal component
+2.2 Replace class based component with funcitonal component
 ```js
 const Posts = ({ data }) => ((
   <div className="posts">
@@ -67,6 +67,38 @@ const Posts = ({ data }) => ((
 2.3 Use withData in export
 ```js
 export default withData(Posts, 'https://gorest.co.in/public-api/posts');
+```
+
+## 3. Use withData HOC in Comments component
+
+Work with file src/components/comments/**comments.component.js**:
+
+3.1 Import withData from file
+```js
+import withData from '../../with-data';
+```
+
+3.2 Replace class based component with funcitonal component
+```js
+const Comments = ({ data }) => ((
+  <div className="comments">
+    {
+      data.map(comment => (
+        <div className="comments__item" key={comment.id}>
+          <p className="comments__item-name">{comment.name}</p>
+          <p className="comments__item-email">{comment.email}</p>
+          <p className="comments__item-body">"{comment.body}"</p>
+          <p className="comments__date">{parseDate(comment.created_at)}</p>
+        </div>
+      ))
+    }
+  </div>
+));
+```
+
+3.3 Use withData in export
+```js
+export default withData(Comments, 'https://gorest.co.in/public-api/comments');
 ```
 
 ## Finish!
